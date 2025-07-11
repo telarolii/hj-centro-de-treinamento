@@ -2,7 +2,9 @@ import React from 'react'
 
 const Contato = () => {
   return (
-    <div>Contato</div>
+   <section className='hero'>
+      <p>Contato</p>
+    </section>
   )
 }
 

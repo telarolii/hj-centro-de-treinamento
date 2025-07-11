@@ -2,7 +2,9 @@ import React from 'react'
 
 const Modalidades = () => {
   return (
-    <div>Modalidades</div>
+    <section className='hero'>
+      <p>Modalidades</p>
+    </section>
   )
 }
 

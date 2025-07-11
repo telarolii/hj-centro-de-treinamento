@@ -1,8 +1,12 @@
 import React from 'react'
 
+// Styles.
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <section className='hero'>
+      <p>Home</p>
+    </section>
   )
 }
 

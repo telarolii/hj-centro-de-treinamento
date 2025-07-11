@@ -2,7 +2,9 @@ import React from 'react'
 
 const Planos = () => {
   return (
-    <div>Planos</div>
+   <section className='hero'>
+      <p>Planos</p>
+    </section>
   )
 }
 
