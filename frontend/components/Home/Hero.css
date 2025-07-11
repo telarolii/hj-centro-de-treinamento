@@ -1,0 +1,161 @@
+.hero {
+  height: calc(100vh - 60px);
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background-color: black;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.hero-content {
+  color: white;
+  width: 48vw;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.hero .hero-content h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+#hero-span,
+#typing {
+  color: #1cbe3f;
+}
+
+.hero .hero-content h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  min-height: 3rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  max-width: 450px;
+   text-align: justify;
+}
+
+.hero-img img {
+  position: relative;
+  width: 32vw;
+}
+
+.hero-img {
+  transition: 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: transparent;
+  border: 0.15rem solid #1cbe3f;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.3s ease;
+}
+
+.social-icons .social-icons-links {
+  color: #1cbe3f;
+}
+
+.social-icons:hover {
+  transform: scale(1.3) translateY(-5px);
+  background-color: #1cbe3f;
+  box-shadow: 0 0 25px #1cbe3f;
+}
+
+.social-icons .social-icons-links:hover {
+  color: black;
+}
+
+.hero-btn {
+  padding: 1rem 2.5rem;
+  background-color: black;
+  border-radius: 4rem;
+  font-size: 1.4rem;
+  color: #1cbe3f;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  border: 2px solid #1cbe3f;
+  transition: 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero-btn:hover {
+  transform: scale3d(1.03);
+  background-color: #1cbe3f;
+  color: black;
+  box-shadow: 0 0 25px #1cbe3f;
+}
+
+.typing-text #typing {
+  font-size: 2.5rem;
+  font-weight: 700;
+  min-width: 280px;
+  position: relative;
+}
+
+.typing-text #typing::before {
+  content: "";
+  color: #1cbe3f;
+  animation: words 20s infinite;
+}
+
+.typing-text #typing::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid black;
+  right: -8;
+  animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 3px solid #1cbe3f;
+  }
+}
+
+@keyframes words {
+    0%,
+  20% {
+    content: "Lutadores";
+  }
+  21%,
+  40% {
+    content: "Campeões";
+  }
+  41%,
+  60% {
+    content: "Princípios";
+  }
+  61%,
+  80% {
+    content: "Mentes";
+  }
+  81%,
+  100% {
+    content: "Histórias";
+  }
+}
