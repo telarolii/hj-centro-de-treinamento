@@ -2,23 +2,23 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="navbar">
       <img src="/logo.png" alt="Logo do Centro de Treinamento HJ" />
-      <ul>
+      <ul className="navlinks">
         <li>
             <NavLink to="/">Home</NavLink>
         </li>
         <li>
-            <NavLink to="/">Modalidades</NavLink>
+            <NavLink to="/modalidades">Modalidades</NavLink>
         </li>
         <li>
-            <NavLink to="/">Planos <span>2024</span></NavLink>
+            <NavLink to="/planos">Planos <span className="year-tag">2024</span></NavLink>
         </li>
         <li>
-            <NavLink to="/">Galeria</NavLink>
+            <NavLink to="/galeria">Galeria</NavLink>
         </li>
         <li>
-            <NavLink to="/">Conato</NavLink>
+            <NavLink to="/contato">Contato</NavLink>
         </li>
       </ul>
     </nav>
