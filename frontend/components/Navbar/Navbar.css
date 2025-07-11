@@ -1,0 +1,61 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 1.5rem 9%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+.navbar a img.logo {
+  max-width: 8rem; 
+  transition: 0.5s ease;
+}
+
+.navbar a img.logo:hover {
+  transform: scale(1.1);
+  border: none;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem; 
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5rem; 
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar a:not(.logo-link):hover,
+.navbar a:not(.logo-link).active {
+  color: #1cbe3f;
+  border-bottom: 3px solid #1cbe3f;
+  padding-bottom: 0.3rem;
+}
+
+.navbar span.year-tag {
+  background-color: #179232;
+  color: black;
+  padding: 0.2rem 0.8rem;
+  border-radius: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 0.4rem;
+}
+
+.hamburguer {
+  display: none;
+}
+
