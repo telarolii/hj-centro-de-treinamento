@@ -5,7 +5,7 @@ import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
 
 // CSS Styles
-import "./Navbar.css"
+import "./Navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,11 +22,11 @@ const Navbar = () => {
         />
       </Link>
 
-        <div className="hamburguer" onClick={toggleMenu}>
-          &#9776;
-        </div>
+      <div className="hamburguer" onClick={toggleMenu}>
+        &#9776;
+      </div>
 
-      <ul className="nav-links">
+      <ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li>
           <NavLink to="/">Home</NavLink>
         </li>
