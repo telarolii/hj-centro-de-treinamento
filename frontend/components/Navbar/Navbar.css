@@ -28,7 +28,7 @@
   align-items: center;
 }
 
-.navbar a {
+.navbar .nav-item {
   color: white;
   text-decoration: none;
   font-weight: 500;
@@ -37,8 +37,8 @@
   border-bottom: 3px solid transparent;
 }
 
-.navbar a:not(.logo-link):hover,
-.navbar a:not(.logo-link).active {
+.navbar a.nav-item:hover,
+.navbar a.nav-item.active {
   color: #1cbe3f;
   border-bottom: 3px solid #1cbe3f;
   padding-bottom: 0.3rem;

@@ -26,25 +26,25 @@ const Navbar = () => {
         &#9776;
       </div>
 
-      <ul className={`nav-links ${isOpen ? "open" : ""}`}>
-        <li>
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/modalidades">Modalidades</NavLink>
-        </li>
-        <li>
-          <NavLink to="/planos">
-            Planos <span className="year-tag">2024</span>
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/galeria">Galeria</NavLink>
-        </li>
-        <li>
-          <NavLink to="/contato">Contato</NavLink>
-        </li>
-      </ul>
+     <ul className={`nav-links ${isOpen ? "open" : ""}`}>
+  <li>
+    <NavLink to="/" className="nav-item">Home</NavLink>
+  </li>
+  <li>
+    <NavLink to="/modalidades" className="nav-item">Modalidades</NavLink>
+  </li>
+  <li>
+    <NavLink to="/planos" className="nav-item">
+      Planos <span className="year-tag">2024</span>
+    </NavLink>
+  </li>
+  <li>
+    <NavLink to="/galeria" className="nav-item">Galeria</NavLink>
+  </li>
+  <li>
+    <NavLink to="/contato" className="nav-item">Contato</NavLink>
+  </li>
+</ul>
     </nav>
   );
 };
