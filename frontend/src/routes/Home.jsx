@@ -1,13 +1,18 @@
-import React from 'react'
+import React from "react";
+
+// Components
+import Hero from "../../components/Home/Hero";
+import FightStyle from "../../components/Fight Styles/FightStyle";
 
 // Styles.
 
 const Home = () => {
   return (
-    <section className='hero'>
-      <p>Home</p>
-    </section>
-  )
-}
+    <>
+      <Hero />
+      <FightStyle />
+    </>
+  );
+};
 
-export default Home
+export default Home;
